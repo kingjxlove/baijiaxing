@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<table>
+    {% for name,index in names %}
+                {{ name }}
+        {% ifequal index 9 %}
+            <br>
+        {% endifequal %}
+    {% endfor %}
+</table>
+</body>
+</html>
